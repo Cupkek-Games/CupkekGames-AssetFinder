@@ -2,8 +2,8 @@
 using CupkekGames.EditorUI;
 using System;
 using System.Collections.Generic;
-using CupkekGames.KeyValueDatabase;
-using CupkekGames.KeyValueDatabase.Editor;
+using CupkekGames.KeyValueDatabases;
+using CupkekGames.KeyValueDatabases.Editor;
 using UnityEditor;
 using UnityEditor.UIElements;
 using UnityEngine;

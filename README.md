@@ -16,4 +16,4 @@ Editor toolbar that auto-populates `List<>` / `KeyValueDatabase<>` fields with a
 
 ## Dependencies
 
-- `com.cupkekgames.keyvaluedatabase`
+- `com.cupkekgames.keyvaluedatabases`
