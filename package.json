@@ -1,0 +1,23 @@
+{
+  "name": "com.cupkekgames.assetfinder",
+  "displayName": "CupkekGames AssetFinder",
+  "version": "0.1.0",
+  "author": {
+    "name": "CupkekGames",
+    "url": "https://www.docs.cupkek.games"
+  },
+  "unity": "6000.0",
+  "documentationUrl": "https://docs.cupkek.games/",
+  "description": "Editor toolbar that auto-populates List<>/KeyValueDatabase<> fields with assets matching attribute filters (path, name, label, type). Extracted from CupkekGames Core.",
+  "keywords": [
+    "AssetFinder",
+    "Asset Search",
+    "Inspector",
+    "Editor",
+    "CupkekGames"
+  ],
+  "dependencies": {
+    "com.cupkekgames.keyvaluedatabase": "0.1.0",
+    "com.cupkekgames.editorui": "0.1.0"
+  }
+}

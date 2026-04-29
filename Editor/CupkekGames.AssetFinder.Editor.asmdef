@@ -1,0 +1,21 @@
+{
+    "name": "CupkekGames.AssetFinder.Editor",
+    "rootNamespace": "CupkekGames.AssetFinder.Editor",
+    "references": [
+        "GUID:b89700823dd24fd4bb5d626de398c8e9",
+        "GUID:aa6539cffd9044b9aa2dc37aa2c66ef0",
+        "GUID:193cdbb2735e402eaa7d7f2a7b7ae952",
+        "GUID:8f77594f32d14e40b107e8394633124d"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
