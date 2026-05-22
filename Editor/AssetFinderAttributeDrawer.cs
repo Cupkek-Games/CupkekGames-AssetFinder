@@ -190,7 +190,7 @@ namespace CupkekGames.AssetFinder.Editor
 
             var targetObject = property.serializedObject.targetObject;
             var persistenceKey = attr.PersistenceKey
-                ?? $"{targetObject.GetType().Name}_{targetObject.GetInstanceID()}_{property.propertyPath}";
+                ?? $"{targetObject.GetType().Name}_{targetObject.GetHashCode()}_{property.propertyPath}";
 
             toolbarConfig = new AssetFinderToolbarConfig
             {
