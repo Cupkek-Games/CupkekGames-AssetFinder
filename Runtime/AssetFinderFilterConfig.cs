@@ -133,13 +133,17 @@ namespace CupkekGames.AssetFinder
             if (type != null)
                 return type;
 
-            // Search all assemblies
+            // Search all assemblies. This is runtime code, so TypeCache is
+            // unavailable; GetAssemblies() is the correct way to resolve a
+            // type by full name, so UAC0005 is suppressed here.
+#pragma warning disable UAC0005
             foreach (var assembly in AppDomain.CurrentDomain.GetAssemblies())
             {
                 type = assembly.GetType(_typeFullName);
                 if (type != null)
                     return type;
             }
+#pragma warning restore UAC0005
 
             return null;
         }
