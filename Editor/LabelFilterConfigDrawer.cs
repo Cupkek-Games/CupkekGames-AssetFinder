@@ -4,6 +4,7 @@ using System;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
+using Unity.Scripting.LifecycleManagement;
 
 namespace CupkekGames.AssetFinder.Editor
 {
@@ -11,10 +12,11 @@ namespace CupkekGames.AssetFinder.Editor
     /// Property drawer for LabelFilterConfig.
     /// </summary>
     [CustomPropertyDrawer(typeof(LabelFilterConfig))]
-    public class LabelFilterConfigDrawer : PropertyDrawer
+    public partial class LabelFilterConfigDrawer : PropertyDrawer
     {
         /// <summary>Per-property input buffer for the "add label" text field.</summary>
-        private static readonly System.Collections.Generic.Dictionary<string, string> s_inputBuffers = new();
+        [AutoStaticsCleanup]
+        private static System.Collections.Generic.Dictionary<string, string> s_inputBuffers = new();
 
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
         {

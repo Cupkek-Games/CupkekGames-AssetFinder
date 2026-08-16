@@ -9,14 +9,16 @@ using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Object = UnityEngine.Object;
+using Unity.Scripting.LifecycleManagement;
 
 namespace CupkekGames.AssetFinder.Editor
 {
     [CustomPropertyDrawer(typeof(AssetFinderAttribute))]
-    public class AssetFinderAttributeDrawer : PropertyDrawer
+    public partial class AssetFinderAttributeDrawer : PropertyDrawer
     {
         /// <summary>Tracks foldout + filter state per property path across repaints.</summary>
-        private static readonly Dictionary<string, ImguiFilterState> s_stateCache = new();
+        [AutoStaticsCleanup]
+        private static Dictionary<string, ImguiFilterState> s_stateCache = new();
 
         private class ImguiFilterState
         {

@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "com.cupkekgames.assetfinder",
   "displayName": "CupkekGames AssetFinder",
   "version": "0.1.3",
@@ -6,7 +6,7 @@
     "name": "CupkekGames",
     "url": "https://www.docs.cupkek.games"
   },
-  "unity": "6000.0",
+  "unity": "6000.5",
   "documentationUrl": "https://docs.cupkek.games/",
   "description": "Editor toolbar that auto-populates List<>/KeyValueDatabase<> fields with assets matching attribute filters (path, name, label, type). Extracted from CupkekGames Core.",
   "keywords": [
